@@ -20,10 +20,12 @@ The CD part can either mean continuous delivery or continuous deployment. The ke
 
 One reason for opting for continuous delivery over deployment could be that perhaps the team wish to conduct more tests on the code (beyond the unit tests).
 
-asdfXD
+Useful links
 
-TESTTESTTEST
+WEBHOOK setup:
 
-TEST2
+https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
 
-TEST3
+GIT MERGE ONTO MAIN setup:
+
+https://andrewtarry.com/posts/jenkins_git_merges/
