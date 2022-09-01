@@ -30,4 +30,6 @@ GIT MERGE ONTO MAIN setup:
 
 https://andrewtarry.com/posts/jenkins_git_merges/
 
-TEST
+CONTINUOUS DEPLOYMENT (rsync link)
+
+https://github.com/khanmaster/jenkins_cicd_aws
