@@ -21,3 +21,5 @@ The CD part can either mean continuous delivery or continuous deployment. The ke
 One reason for opting for continuous delivery over deployment could be that perhaps the team wish to conduct more tests on the code (beyond the unit tests).
 
 asdfXD
+
+TESTTESTTEST
