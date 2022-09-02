@@ -34,33 +34,6 @@ CONTINUOUS DEPLOYMENT (rsync link)
 
 https://github.com/khanmaster/jenkins_cicd_aws
 
-```
-rm -rf eng84_cicd_jenkins*
-git clone -b main https://github.com/Olejekglejek/CI_CD_Jenkins.git
-
-rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@deploy_public_ip:/home/ubuntu/app
-rsync -avz -e "ssh -o StrictHostKeyChecking=no" environment ubuntu@deploy_public_ip:/home/ubuntu/app
-
-ssh -A -o "StrictHostKeyChecking=no" ubuntu@deploy_public_ip <<EOF
-
-    # 'kill' all running instances of node.js
-    killall npm
-
-    # run provisions file for dependencies
-    cd /home/ubuntu/app/environment/app
-    chmod +x provision.sh
-    ./provision.sh
-
-    # Install npm for remaining dependencies
-    cd /home/ubuntu/app/app
-    sudo npm install
-    node seeds/seed.js
-
-    # Run the app
-    node app.js &
-
-EOF
-```
 
 Steps: 
 
