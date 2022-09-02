@@ -52,7 +52,7 @@ Steps:
 7. pm2 kill all create a 5th job to create DB))HOST = db-ip
 8. npm start
 
-ok
+TEST
 
 Useful links
 
