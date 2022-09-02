@@ -44,13 +44,26 @@ We want to automate the integration and deployment of the nodeapp from the devel
 Steps: 
 
 1. Create EC2
-2. Create Security group
-3. Allow Jenkins IP to ssh in aswell as any tools required
-4. Create a 3rd job in Jenkins: get the code from main branch and copy (SCP) to the ec2 instance. Run the script to install dependencies with any other required dependencies
-5. The 3rd job must only be triggered if 2nd job was successful
-6. 4th job launch the app if 3rd job 
-7. pm2 kill all create a 5th job to create DB))HOST = db-ip
-8. npm start
+2. Create Security group, allow Jenkins IP to ssh in aswell as any tools required
+
+![image](https://user-images.githubusercontent.com/110126036/188125152-aa2ffd30-5bd9-4edc-b7bd-07198cef3fc3.png)
+
+3. Create a 3rd job in Jenkins: get the code from main branch and copy (SCP) to the ec2 instance. Run the script to install dependencies with any other required dependencies
+
+![image](https://user-images.githubusercontent.com/110126036/188125305-69876ff1-7e38-463d-92f2-492cc6d94ec0.png)
+
+![image](https://user-images.githubusercontent.com/110126036/188125382-7505ca23-9a58-43c2-a25f-4776e43500cf.png)
+
+#### NOTE: USE PUBLIC IPV4 ADDRESS WHEN USING RSYNC COMMANDS.
+
+4. App is delivered 
+
+![image](https://user-images.githubusercontent.com/110126036/188125456-6faec4e9-49bd-46ed-8d7a-169a6b149bb1.png)
+
+TO DO:
+4th job launch the app if 3rd job 
+pm2 kill all create a 5th job to create DB))HOST = db-ip
+npm start
 
 TEST
 
