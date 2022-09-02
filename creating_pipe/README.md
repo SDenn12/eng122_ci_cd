@@ -69,7 +69,7 @@ TO DO:
 pm2 kill all create a 5th job to create DB))HOST = db-ip
 npm start
 
-TEST
+DEPLOY TEST 1
 
 Useful links
 
