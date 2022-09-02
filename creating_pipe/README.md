@@ -1,4 +1,6 @@
-## Automating the CI Pipeline
+# Creating a CI/CD Pipeline
+
+## Automating Integration
 
 We want to automate the integration and deployment of the nodeapp from the development environment all the way to the production environment (on AWS). This will be NOT including infrastructure as code services such as Ansible and Terraform and so we will create the EC2 instances manually. 
 
@@ -39,7 +41,7 @@ We want to automate the integration and deployment of the nodeapp from the devel
 ![image](https://user-images.githubusercontent.com/110126036/188121734-3e290a7b-ed2a-4eef-b884-d6dc7741b72e.png)
 ![image](https://user-images.githubusercontent.com/110126036/188121793-53239ca5-47a2-4c6c-afe7-67338cc9498a.png)
 
-## Automating the CD pipeline
+## Automating Delivery
 
 Steps: 
 
@@ -59,6 +61,8 @@ Steps:
 4. App is delivered 
 
 ![image](https://user-images.githubusercontent.com/110126036/188125456-6faec4e9-49bd-46ed-8d7a-169a6b149bb1.png)
+
+## Automate Deployment
 
 TO DO:
 4th job launch the app if 3rd job 
