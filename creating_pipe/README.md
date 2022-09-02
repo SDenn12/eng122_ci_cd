@@ -72,6 +72,7 @@ npm start
 DEPLOY TEST 8
 `nohup node app.js > /dev/null 2>&1 &`
 
+DATABASE DEPLOY 1
 
 Useful links
 
