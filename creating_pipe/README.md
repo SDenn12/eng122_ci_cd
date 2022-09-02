@@ -1,5 +1,7 @@
 # Creating a CI/CD Pipeline
 
+![image](https://user-images.githubusercontent.com/110126036/188192713-cfc1a763-584c-47cd-8229-f646dfaf44ad.png)
+
 ## Automating Integration
 
 We want to automate the integration and deployment of the nodeapp from the development environment all the way to the production environment (on AWS). This will be NOT including infrastructure as code services such as Ansible and Terraform and so we will create the EC2 instances manually. 
