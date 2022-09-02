@@ -70,6 +70,8 @@ pm2 kill all create a 5th job to create DB))HOST = db-ip
 npm start
 
 DEPLOY TEST 8
+`nohup node app.js > /dev/null 2>&1 &`
+
 
 Useful links
 
