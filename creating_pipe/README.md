@@ -54,9 +54,22 @@ Steps:
 
 ![image](https://user-images.githubusercontent.com/110126036/188125305-69876ff1-7e38-463d-92f2-492cc6d94ec0.png)
 
-![image](https://user-images.githubusercontent.com/110126036/188125382-7505ca23-9a58-43c2-a25f-4776e43500cf.png)
+4. Create executable shell with the following to download app folder onto the VM.
 
-#### NOTE: USE PUBLIC IPV4 ADDRESS WHEN USING RSYNC COMMANDS.
+```
+ssh -o "StrictHostKeyChecking=no" ubuntu@34.247.166.34
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@34.247.166.34:/home/ubuntu/app
+```
+
+Alternatively to use scp you can use
+
+```
+scp -o "StrictHostKeyChecking=no" -r app ubuntu@public_address:/home/ubuntu/app
+```
+
+The -o "StrictHostKeyChecking=no" allows the ssh to bypass any prompts from the VM.
+
+#### NOTE: USE PUBLIC IPV4 ADDRESS WHEN USING RSYNC/SCP COMMANDS BECAUSE WE ARE NOT OPERATING WITHIN THE VPC.
 
 4. App is delivered 
 
