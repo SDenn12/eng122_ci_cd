@@ -43,14 +43,14 @@ We want to automate the integration and deployment of the nodeapp from the devel
 
 Steps: 
 
-- Create EC2
-- Create Security group
-- Allow Jenkins IP to ssh in aswell as any tools required
-- Create a 3rd job in Jenkins: get the code from main branch and copy (SCP) to the ec2 instance. Run the script to install dependencies with any other required dependencies
-- The 3rd job must only be triggered if 2nd job was successful
-- 4th job launch the app if 3rd job 
-- pm2 kill all create a 5th job to create DB))HOST = db-ip
-- npm start
+1. Create EC2
+2. Create Security group
+3. Allow Jenkins IP to ssh in aswell as any tools required
+4. Create a 3rd job in Jenkins: get the code from main branch and copy (SCP) to the ec2 instance. Run the script to install dependencies with any other required dependencies
+5. The 3rd job must only be triggered if 2nd job was successful
+6. 4th job launch the app if 3rd job 
+7. pm2 kill all create a 5th job to create DB))HOST = db-ip
+8. npm start
 
 
 Useful links
