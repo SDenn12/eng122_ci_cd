@@ -23,3 +23,7 @@ One reason for opting for continuous delivery over deployment could be that perh
 ## Jenkins
 
 Jenkins is an open source automation server. You can create jobs which will execute a code or process. These jobs can be triggered from other events such as the completion of a different job or from a webhook that can be set up on platforms such as github (version control service). 
+
+## Webhooks
+
+When we push from our localhost on the developers branch the code is sent to github which acts as a webhook. This effectively means it is always listening for changes on github and starts the automation process if any change is detected. The webhook can be configured in the repository and the payload URL should be the jenkins URL. On Jenkins you can set a trigger on a job for whenever the webhook is activated.
