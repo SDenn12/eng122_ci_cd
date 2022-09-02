@@ -64,15 +64,30 @@ Steps:
 
 ## Automate Deployment
 
-TO DO:
-4th job launch the app if 3rd job 
-pm2 kill all create a 5th job to create DB))HOST = db-ip
-npm start
+- Execute the following in an executable shell
 
-DEPLOY TEST 8
-`nohup node app.js > /dev/null 2>&1 &`
+```
+# ssh into the aws virtual machine
+ssh -o "StrictHostKeyChecking=no" ubuntu@34.247.166.34 <<EOF
 
-DATABASE DEPLOY 4
+    # kills all node app processes
+	  killall node
+    
+    # creates an environment variable for DB_HOST
+    echo "DB_HOST=mongodb://172.31.21.59:27017/posts" | sudo tee -a /etc/environment
+    
+    # navigates to the app folder (location of app.js)
+    cd /home/ubuntu/app/app
+    
+    # node seeds
+    cd seeds
+    node seed.js
+    cd ..
+    
+    # runs app in background
+    nohup node app.js > /dev/null 2>&1 &
+EOF
+```
 
 Useful links
 
