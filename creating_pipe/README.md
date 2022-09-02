@@ -84,7 +84,7 @@ The -o "StrictHostKeyChecking=no" allows the ssh to bypass any prompts from the 
 ssh -o "StrictHostKeyChecking=no" ubuntu@34.247.166.34 <<EOF
 
     # kills all node app processes
-	  killall node
+    killall node
     
     # creates an environment variable for DB_HOST
     echo "DB_HOST=mongodb://172.31.21.59:27017/posts" | sudo tee -a /etc/environment
